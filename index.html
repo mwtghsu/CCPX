@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   
+</head>
+<style>
+  body{
+   margin: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   min-width: 1000px; 
+
+}
+#header{
+   background-color: #FFD900;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 50px;
+}
+#container{
+   grid-template-columns:46% auto;
+         display:grid;
+         grid-column-gap:0px;
+   
+}
+.timer{
+  
+font-size: 45px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-top: 30px;
+text-align: center;
+
+
+display: inline-block;
+margin-left: 42px;
+
+}
+#titulo{
+font-size: 45px;
+color:    #FFD900;
+;
+}
+#subtitulo{
+color: white;
+padding-bottom: 20px;
+}
+#container2{
+background: #514988;
+text-align: center;
+padding-bottom: 60px;
+
+
+}
+#subtitulo2{
+margin-left: 45px;
+
+}
+#texto{
+color:white;
+font-size: 20px;
+font-weight: 100;
+
+
+}
+video{
+position: relative;
+width: 700px;
+display: block;
+top: 0px;
+left: 20px;
+
+}
+.timer{
+color: #514988;
+
+
+
+}
+#subtitulo2{
+color:  #E33881;
+
+}
+#subtitulo3{
+margin-left: 150px;
+}
+button{
+height: 130px;
+width: 410px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 46px;
+font-weight: bold;
+border: 0;
+border-radius: 40px;
+background-color: #514988;
+color: white;
+margin-top: 30px
+
+;
+}
+#teste{
+   position: relative;
+    left: -10%;
+}
+
+#container4{
+grid-template-columns:60% auto;
+         display:grid;
+         
+}
+#container5{
+padding-bottom: 20px;
+}
+#container3{
+
+}
+
+#dia2{
+   margin-right: 20px;
+}
+#hora2{
+   margin-right: 20px;
+}
+#minuto2{
+   margin-right: 20px;
+}
+button:hover{
+   background: #514988;
+   cursor: pointer;
+   color: #E33881;
+}
+
+.card-highlight{
+   box-shadow: 10px 20px 20px 20px #514988;
+   
+}
+#imagem1:hover{
+   transition: transform .2s;
+   transform: scale(1.1)
+}
+#imagem2:hover{
+   transition: transform .2s;
+   transform: scale(1.1)
+}
+#imagem3:hover{
+   transition: transform .2s;
+   transform: scale(1.1)
+}
+#imagem4:hover{
+   transition: transform .2s;
+   transform: scale(1.1)
+}
+.card-selected{
+   border: 3px solid #514988;
+   
+   border-radius: 20px;
+}
+#imagem1{
+   margin-right: 20px;
+   margin-left: 5px;
+}
+#imagem2{
+   margin-right: 20px;
+}
+#imagem3{
+   margin-right: 20px;
+}
+#imagem4{
+   margin-right: 20px;
+   
+}
+</style>
+
+<body>
+   <div id="header">
+      <img src="ccpx.svg" id="imagem">
+
+   </div>
+   <div id="container">
+      <div id="container2">
+         <h1 id ="titulo">REVIVA O ÉPICO</h1>
+         <h3 id="subtitulo">DE 01 A 04 DE DEZEMBRO</h3>
+          <span id="texto">Você consegue sentir? É aquela sensação de<br>
+             finalmente poder falar em voz alta: "estamos<br>
+             em casa". Sim, em dezembro de 2022,<br>
+             teremos a volta da CCXP física. Mas não será<br>
+             qualquer CCXP, vai ser a maior de todos<br>
+             os tempos. Prepare-se para visitar seus<br>
+             universos favoritos, explorar o Artists' Valley<br>
+             ,se emocionar nos auditórios e encontrar<br>
+             aventuras épicas a cada passo pelos nossos<br>
+              corredores.</span>
+      </div>
+      <div id=container3>
+            <div class="timer">
+               
+               <span id="dia">00</span><span id="dia2">D</span>
+               
+               
+               <span id="hora">00</span><span id="hora2">H</span>
+               
+                
+               <span id="minuto">00</span><span id="minuto2">M</span>
+               
+               
+               <span id="segundo">00</span>S
+                  
+                
+            </div>
+            <h2 id="subtitulo2">PARA A MAIOR CCXP DE TODOS OS TEMPOS</h2>
+            <video controls loop><source src="Arlequina.mp4" type="video/mp4"></video>
+      
+   </div>
+   
+
+   </div>
+   <div id =container5>
+      <div>
+      <h2 id="subtitulo3">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
+      <div id="container4">
+      <div class="imagens">
+         <img src="imagem1.svg" onclick="selectCard('#imagem1')" onmouseover="funcao('#imagem1')"  onmouseout="funcao('#imagem1')"  id="imagem1" class="cards-ingressos">
+         <img src="imagem2.svg" onclick="selectCard('#imagem2')" onmouseover="funcao('#imagem2')"  onmouseout="funcao('#imagem2')"  id="imagem2" class="cards-ingressos">
+         <img src="imagem3.svg" onclick="selectCard('#imagem3')" onmouseover="funcao('#imagem3')"  onmouseout="funcao('#imagem3')"  id="imagem3" class="cards-ingressos">
+         <img src="imagem4.svg" onclick="selectCard('#imagem4')" onmouseover="funcao('#imagem4')"  onmouseout="funcao('#imagem4')"  id="imagem4" class="cards-ingressos" >
+         
+
+      </div>
+      <div  id="teste"><button onclick="showSelectedCards()">Garanta o seu</button></div>
+      </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
